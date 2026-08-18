@@ -1,0 +1,77 @@
+name: Coldblood
+version: 1.0.0
+description: Professional PvP Plugin for Competitive Minecraft Servers
+author: Rithgm98
+main: com.coldblood.Coldblood
+api-version: 1.21
+
+commands:
+  duel:
+    description: Challenge another player to a duel
+    usage: /duel <player>
+    permission: coldblood.duel
+  accept:
+    description: Accept a duel request
+    usage: /accept <player>
+    permission: coldblood.duel
+  deny:
+    description: Deny a duel request
+    usage: /deny <player>
+    permission: coldblood.duel
+  stats:
+    description: View PvP statistics
+    usage: /stats [player]
+    permission: coldblood.stats
+  rank:
+    description: View your ELO rank
+    usage: /rank [player]
+    permission: coldblood.stats
+  leaderboard:
+    description: Display top players
+    usage: /leaderboard
+    permission: coldblood.leaderboard
+  kit:
+    description: Select a PvP kit
+    usage: /kit
+    permission: coldblood.kit
+  spawn:
+    description: Return to spawn
+    usage: /spawn
+    permission: coldblood.spawn
+  setspawn:
+    description: Set the server spawn
+    usage: /setspawn
+    permission: coldblood.admin
+  coldblood:
+    description: Main Coldblood command
+    usage: /coldblood <subcommand>
+    permission: coldblood.admin
+
+permissions:
+  coldblood.*:
+    description: Grant all Coldblood permissions
+    children:
+      coldblood.admin: true
+      coldblood.duel: true
+      coldblood.stats: true
+      coldblood.leaderboard: true
+      coldblood.kit: true
+      coldblood.spawn: true
+  coldblood.admin:
+    description: Access admin commands
+    default: op
+  coldblood.duel:
+    description: Access duel system
+    default: true
+  coldblood.stats:
+    description: View statistics
+    default: true
+  coldblood.leaderboard:
+    description: View leaderboards
+    default: true
+  coldblood.kit:
+    description: Select kits
+    default: true
+  coldblood.spawn:
+    description: Use spawn command
+    default: true

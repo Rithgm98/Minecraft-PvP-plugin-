@@ -1,0 +1,83 @@
+# Coldblood Arenas Configuration
+
+arenas:
+  arena-1:
+    world: 'world'
+    player1-spawn:
+      x: 0.5
+      y: 65.0
+      z: -50.5
+      yaw: 0.0
+      pitch: 0.0
+    player2-spawn:
+      x: 0.5
+      y: 65.0
+      z: 50.5
+      yaw: 180.0
+      pitch: 0.0
+    center:
+      x: 0.5
+      y: 65.0
+      z: 0.5
+    spectator-spawn:
+      x: 0.5
+      y: 70.0
+      z: 0.5
+      yaw: 0.0
+      pitch: -45.0
+    arena-type: 'flat'
+    enabled: true
+
+  arena-2:
+    world: 'world'
+    player1-spawn:
+      x: 100.5
+      y: 65.0
+      z: -50.5
+      yaw: 0.0
+      pitch: 0.0
+    player2-spawn:
+      x: 100.5
+      y: 65.0
+      z: 50.5
+      yaw: 180.0
+      pitch: 0.0
+    center:
+      x: 100.5
+      y: 65.0
+      z: 0.5
+    spectator-spawn:
+      x: 100.5
+      y: 70.0
+      z: 0.5
+      yaw: 0.0
+      pitch: -45.0
+    arena-type: 'flat'
+    enabled: true
+
+  arena-3:
+    world: 'world'
+    player1-spawn:
+      x: 200.5
+      y: 65.0
+      z: -50.5
+      yaw: 0.0
+      pitch: 0.0
+    player2-spawn:
+      x: 200.5
+      y: 65.0
+      z: 50.5
+      yaw: 180.0
+      pitch: 0.0
+    center:
+      x: 200.5
+      y: 65.0
+      z: 0.5
+    spectator-spawn:
+      x: 200.5
+      y: 70.0
+      z: 0.5
+      yaw: 0.0
+      pitch: -45.0
+    arena-type: 'flat'
+    enabled: true

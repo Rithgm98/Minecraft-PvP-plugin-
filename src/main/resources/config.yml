@@ -1,0 +1,51 @@
+# Coldblood Configuration
+
+# Database Settings
+database:
+  type: sqlite  # sqlite or mysql
+  file: plugins/Coldblood/data.db
+  mysql:
+    host: localhost
+    port: 3306
+    database: coldblood
+    username: root
+    password: password
+
+# ELO Settings
+elo:
+  starting: 1000
+  win-gain: 32
+  loss-loss: 32
+  min-elo: 0
+  k-factor: 32
+
+# Duel Settings
+duel:
+  countdown: 10  # seconds
+  match-timeout: 600  # seconds (10 minutes)
+  spectator-mode: true
+  teleport-on-spawn: true
+  combat-cooldown: 30  # seconds after duel ends
+
+# Server Settings
+server:
+  prefix: '&6[&cColdblood&6]'
+  spawn-world: world
+  spawn-x: 0.5
+  spawn-y: 64.0
+  spawn-z: 0.5
+  spawn-yaw: 0.0
+  spawn-pitch: 0.0
+
+# Sounds
+sounds:
+  duel-request: true
+  duel-start: true
+  countdown: true
+  victory: true
+  defeat: true
+
+# Messaging
+messaging:
+  enable-kill-broadcast: true
+  enable-rank-up-broadcast: true

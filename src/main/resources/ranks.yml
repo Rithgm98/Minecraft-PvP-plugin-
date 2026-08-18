@@ -1,0 +1,62 @@
+# Coldblood Rank Configuration
+
+rank-system:
+  enabled: true
+  display-ranks: true
+
+ranks:
+  bronze:
+    name: '&8Bronze'
+    prefix: '&8[Bronze]'
+    min-elo: 0
+    max-elo: 1199
+    color: '&8'
+  
+  silver:
+    name: '&7Silver'
+    prefix: '&7[Silver]'
+    min-elo: 1200
+    max-elo: 1399
+    color: '&7'
+  
+  gold:
+    name: '&6Gold'
+    prefix: '&6[Gold]'
+    min-elo: 1400
+    max-elo: 1699
+    color: '&6'
+  
+  platinum:
+    name: '&bPlatinum'
+    prefix: '&b[Platinum]'
+    min-elo: 1700
+    max-elo: 1999
+    color: '&b'
+  
+  diamond:
+    name: '&3Diamond'
+    prefix: '&3[Diamond]'
+    min-elo: 2000
+    max-elo: 2499
+    color: '&3'
+  
+  master:
+    name: '&5Master'
+    prefix: '&5[Master]'
+    min-elo: 2500
+    max-elo: 2999
+    color: '&5'
+  
+  grandmaster:
+    name: '&dGrandmaster'
+    prefix: '&d[Grandmaster]'
+    min-elo: 3000
+    max-elo: 3499
+    color: '&d'
+  
+  coldblood:
+    name: '&c&lColdblood'
+    prefix: '&c&l[Coldblood]'
+    min-elo: 3500
+    max-elo: 999999
+    color: '&c&l'

@@ -1,0 +1,88 @@
+# Coldblood Kits Configuration
+
+kits:
+  nodebuff:
+    display-name: '&6NoDebuff'
+    description: 'Classic PvP with no potion effects'
+    items:
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'DIAMOND_SWORD'
+      - 'BOW:1'
+      - 'ARROW:64'
+      - 'GOLDEN_APPLE:8'
+      - 'COOKED_BEEF:32'
+      - 'DIAMOND_PICKAXE'
+    debuff-potion-removal: true
+    speed-potion-removal: true
+
+  boxing:
+    display-name: '&cBoxing'
+    description: 'Fist-to-fist combat only'
+    items:
+      - 'LEATHER_HELMET'
+      - 'LEATHER_CHESTPLATE'
+      - 'LEATHER_LEGGINGS'
+      - 'LEATHER_BOOTS'
+      - 'COOKED_BEEF:16'
+    allow-weapons: false
+    weapon-damage-multiplier: 1.0
+
+  sumo:
+    display-name: '&esumo'
+    description: 'Knockback focused combat'
+    items:
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'DIAMOND_AXE'
+    knockback-multiplier: 1.5
+    fall-damage-enabled: true
+
+  builduhc:
+    display-name: '&2BuildUHC'
+    description: 'Mining and crafting included'
+    items:
+      - 'WOODEN_PICKAXE'
+      - 'WOODEN_AXE'
+      - 'DIRT:64'
+      - 'STONE:64'
+      - 'OAK_PLANKS:16'
+      - 'COOKED_BEEF:32'
+      - 'DIAMOND_SWORD'
+      - 'BOW:1'
+      - 'ARROW:64'
+    building-allowed: true
+    wood-crafting: true
+
+  classic:
+    display-name: '&bClassic'
+    description: 'Traditional Minecraft PvP'
+    items:
+      - 'DIAMOND_HELMET'
+      - 'DIAMOND_CHESTPLATE'
+      - 'DIAMOND_LEGGINGS'
+      - 'DIAMOND_BOOTS'
+      - 'DIAMOND_SWORD'
+      - 'BOW:1'
+      - 'ARROW:32'
+      - 'GOLDEN_APPLE:4'
+      - 'COOKED_BEEF:16'
+    health-on-start: 20
+
+  bedwars:
+    display-name: '&9BedWars'
+    description: 'Fast-paced resource combat'
+    items:
+      - 'LEATHER_HELMET'
+      - 'LEATHER_CHESTPLATE'
+      - 'LEATHER_LEGGINGS'
+      - 'LEATHER_BOOTS'
+      - 'STONE_SWORD'
+      - 'WOODEN_PICKAXE'
+      - 'WOOL:32'
+      - 'OAK_PLANKS:32'
+    resource-generation: true

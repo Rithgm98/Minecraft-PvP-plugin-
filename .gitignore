@@ -1,0 +1,29 @@
+# Gradle
+.gradle/
+build/
+out/
+*.class
+
+# IDE
+.idea/
+.vscode/
+*.iml
+*.iws
+*.ipr
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Build artifacts
+*.jar
+*.war
+*.zip
+
+# Local database
+*.db
+*.sqlite
+
+# Environment
+.env
+local.properties

@@ -1,0 +1,57 @@
+plugins {
+    id 'java'
+    id 'com.github.johnrengelman.shadow' version '8.1.1'
+}
+
+group = 'com.coldblood'
+version = '1.0.0'
+
+repositories {
+    mavenCentral()
+    maven { url 'https://repo.papermc.io/repository/maven-public/' }
+    maven { url 'https://repo.maven.apache.org/maven2' }
+}
+
+compile {
+    sourceCompatibility = JavaVersion.VERSION_21
+    targetCompatibility = JavaVersion.VERSION_21
+}
+
+tasks.withType(JavaCompile) {
+    options.encoding = 'UTF-8'
+    options.release = 21
+}
+
+dependencies {
+    // Paper API for 1.21.11
+    compileOnly 'io.papermc.paper:paper-api:1.21.1-R0.1-SNAPSHOT'
+    
+    // SQLite support
+    implementation 'org.xerial:sqlite-jdbc:3.44.0.0'
+    
+    // MySQL support (optional)
+    implementation 'mysql:mysql-connector-java:8.0.33'
+    
+    // Lombok for cleaner code
+    compileOnly 'org.projectlombok:lombok:1.18.30'
+    annotationProcessor 'org.projectlombok:lombok:1.18.30'
+    
+    // JSON parsing
+    implementation 'com.google.code.gson:gson:2.10.1'
+}
+
+task buildPlugin(dependsOn: 'shadowJar') {
+    doLast {
+        println 'Coldblood plugin built successfully!'
+        println 'Output: build/libs/Coldblood-' + version + '.jar'
+    }
+}
+
+shadowJar {
+    archiveBaseName.set('Coldblood')
+    archiveVersion.set(version)
+    
+    relocate 'org.sqlite', 'com.coldblood.sqlite'
+    relocate 'com.mysql', 'com.coldblood.mysql'
+    relocate 'com.google.gson', 'com.coldblood.gson'
+}

@@ -1,0 +1,85 @@
+# Coldblood Messages Configuration
+
+prefix: '&6[&cColdblood&6]'
+
+# Command Messages
+commands:
+  duel:
+    sent: '&aChallenge sent to &6{player}&a!'
+    received: '&6{player} &achallenged you! Type &6/accept {player} &ato accept or &6/deny {player} &ato decline.'
+    already-in-duel: '&cYou are already in a duel!'
+    target-in-duel: '&c{player} is already in a duel!'
+    already-sent: '&cYou already sent a duel request to {player}!'
+    player-not-found: '&cPlayer not found!'
+    cannot-self-duel: '&cYou cannot duel yourself!'
+  
+  accept:
+    accepted: '&aYou accepted the duel with &6{player}&a!'
+    challenger-accepted: '&6{player} &aaccepted your duel!'
+    no-request: '&cNo duel request from {player}!'
+    match-starting: '&aDuel starting in {time} seconds!'
+  
+  deny:
+    denied: '&aYou denied the duel with &6{player}&a.'
+    challenger-denied: '&6{player} &adenied your duel.'
+    no-request: '&cNo duel request from {player}!'
+  
+  stats:
+    header: '&6=== PvP Statistics for &a{player} &6==='
+    wins: '&aWins: &6{wins}'
+    losses: '&aLosses: &6{losses}'
+    kills: '&aKills: &6{kills}'
+    deaths: '&aDeaths: &6{deaths}'
+    win-rate: '&aWin Rate: &6{winrate}%'
+    elo: '&aELO: &6{elo}'
+    highest-elo: '&aHighest ELO: &6{highest}'
+    win-streak: '&aWin Streak: &6{streak}'
+    best-streak: '&aBest Win Streak: &6{best}'
+  
+  rank:
+    your-rank: '&aYour Rank: &6{rank}'
+    player-rank: '&6{player}&a\'s Rank: &6{rank}'
+    elo-info: '&aELO: &6{elo} &a/ &6{nextelo} (Next Rank)'
+  
+  leaderboard:
+    title: '&6=== Coldblood Leaderboard ==='
+    type-selection: '&aSelect leaderboard type:'
+    elo-list: '&6Top ELO Ratings'
+    wins-list: '&6Most Wins'
+    kills-list: '&6Most Kills'
+    streaks-list: '&6Longest Win Streaks'
+  
+  kit:
+    selected: '&aKit &6{kit} &aselected!'
+    invalid: '&cInvalid kit!'
+    already-selected: '&cYou already selected this kit!'
+  
+  spawn:
+    teleported: '&aTeleported to spawn!'
+    no-spawn-set: '&cSpawn not set! Ask an admin to set it.'
+  
+  setspawn:
+    set: '&aSpawn set at your location!'
+    no-permission: '&cYou do not have permission!'
+
+# Duel System Messages
+duel-system:
+  countdown: '&eDuel starting in &6{time} &eseconds!'
+  final-countdown: '&c{time}...'
+  duel-started: '&a&lDUEL STARTED!'
+  duel-ended: '&a&lDUEL ENDED!'
+  you-won: '&a&lVICTORY! &aYou won against &6{opponent}!'
+  you-lost: '&c&lDEFEAT! &cYou lost to &6{opponent}!'
+  draw: '&eThe duel was a draw!'
+  opponent-disconnected: '&cYour opponent disconnected! You win!'
+  timeout: '&eThe duel timed out!'
+  elo-gained: '&aGained &6{elo} &aELO!'
+  elo-lost: '&cLost &6{elo} &cELO!'
+  rank-up: '&a&lRANK UP! &aYou are now &6{rank}&a!'
+
+# Error Messages
+errors:
+  database-error: '&cDatabase error occurred! Contact an admin.'
+  config-reload: '&aConfiguration reloaded!'
+  invalid-command: '&cInvalid command! Type &6/help coldblood'
+  missing-permission: '&cYou do not have permission for this command!'
